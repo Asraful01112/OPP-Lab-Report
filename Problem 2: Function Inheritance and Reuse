@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+class Calculator {
+public:
+int add(int a, int b) {
+return a + b;
+}
+};
+class AdvancedCalculator : public Calculator {
+public:
+int multiply(int a, int b) {
+return a * b;
+}
+};
+int main() {
+AdvancedCalculator calc;
+cout << "Addition: " << calc.add(10, 3) << endl;
+cout << "Multiplication: " << calc.multiply(10, 3) << endl;
+return 0;
+}
