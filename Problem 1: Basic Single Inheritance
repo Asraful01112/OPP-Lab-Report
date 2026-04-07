@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+class Person {
+protected:
+string name;
+public:
+void setName(string n) {
+name = n;
+}
+};
+class Student : public Person {
+int roll;
+public:
+void setRoll(int r) {
+roll = r;
+}
+void display() {
+cout << "Name: " << name
+<< ", Roll: " << roll << endl;
+}
+};
+int main() {
+Student s;
+s.setName("Md Asraful Sarkar");
+s.setRoll(1019);
+s.display();
+
+return 0;
+}
